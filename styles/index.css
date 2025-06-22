@@ -143,8 +143,7 @@ nav.norm ul li a:focus {
   border-right: none;
 }
 
-#pageNavList ul li {
-}
+#pageNavList ul li {}
 
 /* ::::::::::: MAIN ::::::::::: */
 
@@ -183,14 +182,15 @@ main,
 }
 
 .module::before {
-  --size: 20px;
   content: attr(data-module);
   position: absolute;
+  display: grid;
+  place-content: center;
+  line-height: 1;
   top: var(--thin);
   left: var(--thin);
-  padding: var(--thin);
-  width: var(--size);
-  height: var(--size);
+  width: 2.5rem;
+  aspect-ratio: 1;
   color: var(--jbLite);
   text-align: center;
   border: 2px solid var(--jbLite);
@@ -354,21 +354,21 @@ main,
     width: 50%;
 } */
 
-.section > div:first-of-type {
+.section>div:first-of-type {
   padding: var(--thicc);
 }
 
-.section.split > div:first-of-type {
+.section.split>div:first-of-type {
   width: 55%;
 }
 
-.section.split > div:last-of-type {
+.section.split>div:last-of-type {
   width: 45%;
   /* height: 100%; */
   /* test */
 }
 
-.section.split > div:last-of-type::before {
+.section.split>div:last-of-type::before {
   content: "";
   display: block;
   padding-bottom: 100%;
@@ -476,9 +476,6 @@ main,
   box-sizing: border-box;
 }
 
-.form-wrapper {
-  box-shadow: 2px 2px 5px var(--jbShadow);
-}
 
 h4.label {
   font-weight: normal;
@@ -498,12 +495,12 @@ form#classmateFriendList fieldset:first-of-type {
   margin-top: 0;
 }
 
-form#classmateFriendList fieldset > label {
+form#classmateFriendList fieldset>label {
   display: block;
   margin: var(--thicc) 0 var(--thin);
 }
 
-form#classmateFriendList fieldset > label:first-of-type {
+form#classmateFriendList fieldset>label:first-of-type {
   margin-top: var(--thin);
 }
 
@@ -534,7 +531,7 @@ form#classmateFriendList select {
   border-radius: var(--inner);
 }
 
-form#classmateFriendList input + input {
+form#classmateFriendList input+input {
   margin-right: var(--thin);
 }
 
@@ -555,7 +552,7 @@ form#classmateFriendList label.form-control {
   margin: 0;
 }
 
-form#classmateFriendList label.form-control + .form-control {
+form#classmateFriendList label.form-control+.form-control {
   margin-top: var(--normal);
 }
 
