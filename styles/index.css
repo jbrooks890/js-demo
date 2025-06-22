@@ -198,13 +198,6 @@ main,
   z-index: 2;
 }
 
-.module::after {
-  content: "Julian Brooks | Per Scholas | Prework: Day " attr(data-module);
-  display: block;
-  color: hsla(0, 0%, 0%, 0.5);
-  margin: 1em auto 0;
-  text-align: center;
-}
 
 /* #aboutJulian {
     position: relative;

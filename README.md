@@ -1,2 +1,1 @@
-# julian-perscholas
-Per Scholas SE Assignments
+# Basic Website Demo
